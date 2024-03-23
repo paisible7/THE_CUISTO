@@ -1,28 +1,98 @@
+@font-face {
+    font-family: 'old';
+    src: url('../police/Olde\ Stencil.ttf');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
   width: 100%;
-  height: 200px;
-  background: yellow;
+  height: 100vh;
+  background: black;
+  background-image: url("../images/img10.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
 }
 
 header nav {
   display: flex;
-  background: red;
   position: absolute;
   justify-content: center;
   right: 0;
+  top: 100px;
   width: 40%;
+  padding: 10px;
+}
+img {
+  width: 250px;
 }
 
 header nav a {
   text-decoration: none;
   color: white;
-  background: cyan;
+  font-size: 16pt;
   padding: 10px;
-  margin: 5px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: forestgreen;
+}
+
+header .container_header {
+  background: red;
+  align-self: center;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  left: 100px;
+  height: 80%;
+}
+
+header .container_header .content_header {
+  background: lime;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+header .container_header .form {
+  background: cyan;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+header .container_header .form form {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  background: black;
+  width: 100%;
+  height: 100vh;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background: black;
+  color: gold;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 16pt;
 }
