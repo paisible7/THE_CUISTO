@@ -1,4 +1,3 @@
-
 <header>
 <nav>
     <a class="nav_link"  href="acceuil.php">Acceuil</a>
@@ -9,9 +8,16 @@
 </nav>
 <div class="container_header">
     <div class="content_header">
-        <h1 style="font-family: 'old';justify-content:center;align-items:center;">The<br>Cuisto</h1>
-       <img src="images/logo.png" alt="">
-       <button type="submit">Se connecter</button>
+        <div id="the_cuisto">
+           <h1 class="the_cuisto"><p>The</p></h1>
+           <h1 class="the_cuisto"><p>Cuisto</p></h1> 
+        </div>
+        <div id="logo">
+            <img src="images/img6.jpg" alt="">
+        </div>
+        <div id="btnconnect">
+            <button class="btncnt" type="submit">Se connecter</button>
+        </div>
     </div>
     <div class="form">
         <form action="">
@@ -35,16 +41,13 @@
             
            
         
-        <button class="btnConnexion" >Conexion</button>
-        <?php if (isset($_SESSION['LOGGED_USER'])):?>
-  
-      <a href="logout.php">Deconnexion</a>
-        <?php endif?>
-    </form>
-    </div>
-        
+            <button class="btnConnexion" >Conexion</button>
+            <?php if (isset($_SESSION['LOGGED_USER'])):?>
+            <a href="logout.php">Deconnexion</a>
+            <?php endif?>
+        </form>
+    </div>  
 </div>
-    
 </header>
    
     

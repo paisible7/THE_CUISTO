@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'old';
-    src: url('../police/Olde\ Stencil.ttf');
+  font-family: "old";
+  src: url("../police/Olde\ Stencil.ttf");
 }
 
 * {
@@ -29,9 +29,6 @@ header nav {
   width: 40%;
   padding: 10px;
 }
-img {
-  width: 250px;
-}
 
 header nav a {
   text-decoration: none;
@@ -47,7 +44,6 @@ header nav a:hover {
 }
 
 header .container_header {
-  background: red;
   align-self: center;
   width: 30%;
   position: relative;
@@ -57,10 +53,65 @@ header .container_header {
 }
 
 header .container_header .content_header {
-  background: lime;
   width: 100%;
   height: 100%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
   z-index: 2;
+}
+header .container_header .content_header #the_cuisto {
+  padding: 10px;
+  width: 100%;
+  height: 30%;
+}
+header .container_header .content_header #the_cuisto .the_cuisto {
+  overflow: hidden;
+}
+
+@keyframes test {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+header .container_header .content_header #the_cuisto .the_cuisto p {
+  text-align: center;
+  font-family: "old";
+  animation: test 1.25s linear forwards;
+  font-size: 45pt;
+}
+
+header .container_header .content_header #logo {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header .container_header .content_header #logo img {
+  width: 100%;
+}
+
+header .container_header .content_header #btnconnect {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+
+header .container_header .content_header #btnconnect .btncnt {
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  background: forestgreen;
+  color: white;
+  font-size: 20pt;
+  font-weight: 600;
 }
 
 header .container_header .form {
@@ -76,6 +127,49 @@ header .container_header .form form {
   border: 2px solid black;
   width: 100%;
   height: 100%;
+}
+.container {
+  background: red;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.container main {
+  width: 40%;
+  height: 500px;
+  padding: 10px;
+  background: lime;
+}
+
+.container main form {
+  width: 100%;
+  height: 100%;
+  background: cyan;
+  display: flex;
+  flex-direction: column;
+}
+
+.container main form .form_email {
+  background: purple;
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.container main form .form_email input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+}
+
+.container main form .form_email input:active {
+  box-shadow: none;
+  border: none;
+  background: red;
 }
 
 section {
