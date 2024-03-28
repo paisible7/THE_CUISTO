@@ -16,26 +16,26 @@
             <img src="images/img6.jpg" alt="">
         </div>
         <div id="btnconnect">
-            <button class="btncnt" type="submit">Se connecter</button>
+            <button class="btncnt" >Se connecter</button>
         </div>
     </div>
     <div class="form">
         <form action="">
-            <div class="ipnput-group">
-                <label for="eMail">Adresse Mail</label><br>
-                <input type="email" name="eMail" id="eMail">
+            <div class="input-group">
+                <input type="email" name="eMail" id="eMail" required>
+                <label for="eMail">Adresse Mail</label>
             </div>
-            <div class="ipnput-group">  
-                <label for="numTel">Numéro de téléphone</label><br>
-                <input type="tel" name="numTel" id="numTel">
+            <div class="input-group">
+                <input type="text" name="username" id="username" required>
+                <label for="username">Nom D'utilisateur</label>
             </div>
-            <div class="ipnput-group">
-                <label for="mdp">Mot De Passe</label><br>
-                <input type="password" name="mdp" id="mdp">
+            <div class="input-group">
+                <input type="password" name="mdp" id="mdp" required>
+                <label for="mdp">Mot De Passe</label>
             </div>
-            <div class="ipnput-group">
-                <label for="cmdp">Confirmer Le Mot De Passe</label><br>
-                <input type="password" name="cmdp" id="cmdp">
+            <div class="input-group ">
+                <input type="checkbox" name="mdp" id="mdp" required>
+                <label for="mdp">Mot De Passe</label>
             </div>
             
             
@@ -48,6 +48,4 @@
         </form>
     </div>  
 </div>
-</header>
-   
-    
+</header> 
