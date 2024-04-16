@@ -9,10 +9,15 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 header {
   width: 100%;
   height: 100vh;
+  display: flex;
+}
+
+.hdr {
+  width: 100%;
+  height: 100%;
   background: black;
   background-image: url("../images/img10.png");
   background-size: contain;
@@ -20,7 +25,7 @@ header {
   display: flex;
 }
 
-header nav {
+.hdr nav {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -30,7 +35,7 @@ header nav {
   padding: 10px;
 }
 
-header nav a {
+.hdr nav a {
   text-decoration: none;
   color: white;
   font-size: 16pt;
@@ -39,11 +44,11 @@ header nav a {
   font-weight: 500;
 }
 
-header nav a:hover {
+.hdr nav a:hover {
   color: forestgreen;
 }
 
-header .container_header {
+.hdr .container_header {
   align-self: center;
   width: 30%;
   position: absolute;
@@ -52,7 +57,7 @@ header .container_header {
   height: 80%;
 }
 
-header .container_header .content_header {
+.hdr .container_header .content_header {
   width: 100%;
   height: 100%;
   display: flex;
@@ -61,12 +66,12 @@ header .container_header .content_header {
   position: absolute;
   z-index: 2;
 }
-header .container_header .content_header #the_cuisto {
+.hdr .container_header .content_header #the_cuisto {
   padding: 10px;
   width: 100%;
   height: 30%;
 }
-header .container_header .content_header #the_cuisto .the_cuisto {
+.hdr .container_header .content_header #the_cuisto .the_cuisto {
   overflow: hidden;
 }
 
@@ -78,14 +83,14 @@ header .container_header .content_header #the_cuisto .the_cuisto {
     transform: translateY(0px);
   }
 }
-header .container_header .content_header #the_cuisto .the_cuisto p {
+.hdr .container_header .content_header #the_cuisto .the_cuisto p {
   text-align: center;
   font-family: "old";
   animation: test 1.25s linear forwards;
   font-size: 45pt;
 }
 
-header .container_header .content_header #logo {
+.hdr .container_header .content_header #logo {
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -93,11 +98,11 @@ header .container_header .content_header #logo {
   align-items: center;
 }
 
-header .container_header .content_header #logo img {
+.hdr .container_header .content_header #logo img {
   width: 100%;
 }
 
-header .container_header .content_header #btnconnect {
+.hdr .container_header .content_header #btnconnect {
   width: 100%;
   display: flex;
   align-items: center;
@@ -105,7 +110,7 @@ header .container_header .content_header #btnconnect {
   height: 20%;
 }
 
-header .container_header .content_header #btnconnect .btncnt {
+.hdr .container_header .content_header #btnconnect .btncnt {
   border: none;
   padding: 20px;
   border-radius: 10px;
@@ -115,7 +120,7 @@ header .container_header .content_header #btnconnect .btncnt {
   font-weight: 600;
 }
 
-header .container_header .form {
+.hdr .container_header .form {
   padding: 60px;
   display: flex;
   width: 100%;
@@ -125,11 +130,10 @@ header .container_header .form {
   display: none;
 }
 
-header .container_header .form form {
+.hdr .container_header .form form {
   width: 100%;
   height: 100%;
 }
-
 
 .input-group {
   position: relative;
@@ -148,8 +152,9 @@ header .container_header .form form {
   padding: 0px 10px;
   font-weight: 600;
   border: none;
-  border-bottom: .1px solid rgba(128, 128, 128, 0.507);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.507);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .input-group label {
@@ -158,46 +163,94 @@ header .container_header .form form {
   left: 5px;
   transform: translateY(-50%);
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-
-.input-group input:focus~label,
-.input-group input:valid~label {
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
   top: 0;
   font-size: 12px;
 }
 
-
-
-
 .container {
-  background: red;
   width: 100%;
-  height: 100%;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.container main {
-  width: 40%;
-  height: 500px;
+  height: 100vh;
   padding: 10px;
-  background: lime;
+  background: black;
+  display: flex;
 }
 
-.container main form {
+.container .contact {
   width: 100%;
   height: 100%;
-  background: cyan;
+}
+
+.container .contact #imgForm {
+  width: 100%;
+  height: 100%;
+  background: maroon;
   display: flex;
-  flex-direction: column;
+}
+
+.container .contact #imgForm .img img {
+  height: 100%;
+}
+
+.container .contact #imgForm .formula {
+  background: gold;
+  height: 90%;
+  width: 100%;
+  align-self: center;
+}
+ 
+
+.hdr .modal {
+  display: flex;
+  width: 900px;
+  min-height: 500px;
+  position: absolute;
+  z-index: 55;
+  align-self: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.hdr .modal div {
+  width: 100%;
+  border: 5px dotted red;
+}
+
+.hdr .overlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 50;
+}
+
+.hdr .hiddezn {
+  display: none;
+}
+
+.body_overflow {
+  overflow: hidden;
+}
+
+/*
+###############################################################################
+###############################################################################
+*/
+
+.container .formula form textarea {
+  resize: none;
+}
+
+.container main form h1 {
+  text-align: center;
 }
 
 .container main form .form_email {
-  background: purple;
-  border: 2px solid white;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -215,13 +268,6 @@ header .container_header .form form {
   background: red;
 }
 
-
-
-section {
-  background: black;
-  width: 100%;
-  height: 100vh;
-}
 
 footer {
   position: relative;
