@@ -18,11 +18,13 @@ header {
 .hdr {
   width: 100%;
   height: 100%;
-  background: black;
+  background: rgb(0, 0, 0);
   background-image: url("../images/img10.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hdr nav {
@@ -205,26 +207,94 @@ header {
  
 
 .hdr .modal {
-  display: flex;
-  width: 900px;
-  min-height: 500px;
+  background: white;
   position: absolute;
-  z-index: 55;
-  align-self: center;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 15px;
+  width: 50%;
+  height: 70%;
+  z-index: 51;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  
 }
 
-.hdr .modal div {
+.hdr .modal .img {
   width: 100%;
-  border: 5px dotted red;
+  background-image: url(../images/img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.hdr .modal .form_cont {
+  width: 100%;
+  height: 100%;
+  background: red;
+  padding: 20px;
+}
+
+.hdr .modal .form_cont .cont_form {
+  background: purple;
+  width: 100%;
+  height: 100%;
+}
+
+.hdr .modal .form_cont .formContact {
+  background: cyan;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hdr .modal .form_cont .formContact form {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  padding-top: 20px;
+  position: absolute;
+}
+
+.hdr .modal .form_cont .formContact form .ipt-grp {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+.hdr .modal .form_cont .formContact form .ipt-grp input {
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  padding: 0px 10px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: .1px solid rgba(128, 128, 128, 0.507);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hdr .modal .form_cont .formContact form .ipt-grp label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: .5s;
+}
+
+.hdr .modal .form_cont .formContact form .ipt-grp input:focus~label,
+.hdr .modal .form_cont .formContact form .ipt-grp inout:valid~label{
+  top: 0;
+  font-size: 12px;
+}
 .hdr .overlay {
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: black;
+  opacity: .7;
   backdrop-filter: blur(3px);
   z-index: 50;
 }
@@ -241,32 +311,6 @@ header {
 ###############################################################################
 ###############################################################################
 */
-
-.container .formula form textarea {
-  resize: none;
-}
-
-.container main form h1 {
-  text-align: center;
-}
-
-.container main form .form_email {
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-}
-
-.container main form .form_email input {
-  border: none;
-  background: none;
-  border-bottom: 1px solid white;
-}
-
-.container main form .form_email input:active {
-  box-shadow: none;
-  border: none;
-  background: red;
-}
 
 
 footer {

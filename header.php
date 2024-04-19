@@ -54,10 +54,31 @@
             </div>
         </div>
         <div class="modal hidden">
-            <div>
-                <img src="images/im3.jpg" alt="">
+            <div class="img">
             </div>
-            <div></div>
+            <div class="form_cont">
+                <div class="cont_form">
+                    <div class="title">
+                        <h3>Fomulaire</h3>
+                    </div>
+                    <div class="formContact">
+                        <form action="">
+                            <div class="ipt-grp">
+                                <input type="text" name="nom" required>
+                                <label for="nom">Nom</label>
+                            </div>
+                            <div class="ipt-grp">
+                                <input type="text" name="postnom" required>
+                                <label for="postnom">Nom</label>
+                            </div>
+                            <div class="ipt-grp">
+                                <input type="text" name="mess"required>
+                                <label for="mess">Nom</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="overlay hidden"></div>
     </main>
