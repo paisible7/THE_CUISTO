@@ -2,7 +2,7 @@
     <main class="hdr">
         <nav>
             <a class="nav_link" href="acceuil.php">Acceuil</a>
-            <a class="nav_link" href="contact.php">Contact</a>
+            <a class="nav_link contact_link" href="#">Contact</a>
             <a class="nav_link" href="#">A propos</a>
             <a class="nav_link" href="index.php">Recetes</a>
             <a class="nav_link" href="form_recipe.php">Ajouter Recette</a>
@@ -65,7 +65,7 @@
                         <form action="">
                             <div class="ipt-grp">
                                 <input type="text" name="nom" required>
-                                <label for="nom">Nom</label>
+                                <label for="nom">Nom d'utilisateur</label>
                             </div>
                             <div class="ipt-grp">
                                 <input type="text" name="postnom" required>

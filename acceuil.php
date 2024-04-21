@@ -7,7 +7,7 @@
     <title>Site de Recettes - Page d'accueil</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body >
+<body class="body_overflow" >
     
 <?php require_once(__DIR__ . '/header.php'); ?>
 

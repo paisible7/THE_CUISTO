@@ -174,61 +174,55 @@ header {
   font-size: 12px;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
-  padding: 10px;
-  background: black;
-  display: flex;
-}
-
-.container .contact {
-  width: 100%;
-  height: 100%;
-}
-
-.container .contact #imgForm {
-  width: 100%;
-  height: 100%;
-  background: maroon;
-  display: flex;
-}
-
-.container .contact #imgForm .img img {
-  height: 100%;
-}
-
-.container .contact #imgForm .formula {
-  background: gold;
-  height: 90%;
-  width: 100%;
-  align-self: center;
-}
- 
-
 .hdr .modal {
   background: white;
   position: absolute;
   width: 50%;
   height: 70%;
   z-index: 51;
-  display: flex;
+  display: none;
   border-radius: 20px;
   overflow: hidden;
+  animation: brdr 7.5s linear infinite;
+  animation-delay: 2.5s;
+  animation: scs .2s linear forwards;
   
 }
 
+@keyframes scs {
+  from{
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+  
+}
+
+@keyframes brdr {
+  0%{
+    box-shadow: 0px 0px 30px 5px transparent;
+  }
+  50% {
+    box-shadow: 0px 0px 30px 5px  white;
+  }
+  100% {
+    box-shadow: 0px 0px 30px 5px transparent;
+  }
+}
 .hdr .modal .img {
   width: 100%;
   background-image: url(../images/img3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom-right-radius: 30px ;
+  border-top-right-radius: 30px;
 }
 
 .hdr .modal .form_cont {
   width: 100%;
   height: 100%;
-  background: red;
+  background: transparent;
   padding: 20px;
 }
 
@@ -236,6 +230,7 @@ header {
   background: purple;
   width: 100%;
   height: 100%;
+  
 }
 
 .hdr .modal .form_cont .formContact {
@@ -297,15 +292,13 @@ header {
   opacity: .7;
   backdrop-filter: blur(3px);
   z-index: 50;
-}
-
-.hdr .hiddezn {
   display: none;
 }
 
-.body_overflow {
-  overflow: hidden;
+.hdr .hidden {
+  display: none;
 }
+
 
 /*
 ###############################################################################
