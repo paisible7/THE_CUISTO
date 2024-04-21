@@ -185,16 +185,25 @@ header {
   overflow: hidden;
   animation: brdr 7.5s linear infinite;
   animation-delay: 2.5s;
-  animation: scs .2s linear forwards;
   
 }
 
-@keyframes scs {
+@keyframes modBoxIn {
   from{
     transform: scale(0.1);
   }
   to {
     transform: scale(1);
+  }
+  
+}
+
+@keyframes modBoxOut {
+  from{
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
   }
   
 }
