@@ -1,3 +1,5 @@
+@import url(style2.css);
+
 @font-face {
   font-family: "old";
   src: url("../police/Olde\ Stencil.ttf");
@@ -175,48 +177,26 @@ header {
 }
 
 .hdr .modal {
-  background: white;
+  background: black;
   position: absolute;
   width: 50%;
   height: 70%;
-  z-index: 51;
+  z-index: 6;
   display: none;
   border-radius: 20px;
   overflow: hidden;
-  animation: brdr 7.5s linear infinite;
-  animation-delay: 2.5s;
-  
-}
-
-@keyframes modBoxIn {
-  from{
-    transform: scale(0.1);
-  }
-  to {
-    transform: scale(1);
-  }
-  
-}
-
-@keyframes modBoxOut {
-  from{
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.1);
-  }
-  
+  animation: brdr 5s linear 1.25s infinite; 
 }
 
 @keyframes brdr {
   0%{
-    box-shadow: 0px 0px 30px 5px transparent;
+    box-shadow: -10px 0px 30px 5px transparent;
   }
   50% {
     box-shadow: 0px 0px 30px 5px  white;
   }
   100% {
-    box-shadow: 0px 0px 30px 5px transparent;
+    box-shadow: 10px 0px 30px 5px transparent;
   }
 }
 .hdr .modal .img {
@@ -246,6 +226,7 @@ header {
   background: cyan;
   width: 100%;
   height: 100%;
+  border-radius: 30% 70% 70% 30% / 30% 58% 42% 70% / 80% 28% 92% 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,10 +278,9 @@ header {
 .hdr .overlay {
   width: 100%;
   height: 100vh;
-  background: black;
-  opacity: .7;
-  backdrop-filter: blur(3px);
-  z-index: 50;
+background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  z-index: 5;
   display: none;
 }
 
@@ -315,7 +295,7 @@ header {
 */
 
 
-footer {
+.footer {
   position: relative;
   bottom: 0;
   background: black;

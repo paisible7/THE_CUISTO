@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     
 <?php require_once(__DIR__ . '/header.php'); ?>
 
-<?php require_once(__DIR__ . '/section.php'); ?>
+<?php require_once(__DIR__ . '/apropos.php'); ?>
 
 <?php require_once(__DIR__ . '/footer.php'); ?>
 

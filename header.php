@@ -3,7 +3,7 @@
         <nav>
             <a class="nav_link" href="acceuil.php">Acceuil</a>
             <a class="nav_link contact_link" href="#">Contact</a>
-            <a class="nav_link" href="#">A propos</a>
+            <a class="nav_link" href="#apropos">A propos</a>
             <a class="nav_link" href="index.php">Recetes</a>
             <a class="nav_link" href="form_recipe.php">Ajouter Recette</a>
         </nav>
@@ -57,6 +57,7 @@
             <div class="img">
             </div>
             <div class="form_cont">
+                
                 <div class="cont_form">
                     <div class="title">
                         <h3>Fomulaire</h3>
@@ -79,6 +80,7 @@
                     </div>
                 </div>
             </div>
+            <span class="close">&times;</span>
         </div>
         <div class="overlay hidden"></div>
     </main>
