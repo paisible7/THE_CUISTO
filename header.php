@@ -47,36 +47,37 @@
 
 
                     <button class="btnConnexion">Conexion</button>
-                    <?php if (isset($_SESSION['LOGGED_USER'])): ?>
+                    <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
                         <a href="logout.php">Deconnexion</a>
                     <?php endif ?>
                 </form>
             </div>
         </div>
-        <div class="modal hidden">
-            <div class="img">
-            </div>
-            <div class="form_cont">
-                
-                <div class="cont_form">
-                    <div class="title">
-                        <h3>Fomulaire</h3>
-                    </div>
-                    <div class="formContact">
-                        <form action="">
-                            <div class="ipt-grp">
-                                <input type="text" name="nom" required>
-                                <label for="nom">Nom d'utilisateur</label>
-                            </div>
-                            <div class="ipt-grp">
-                                <input type="text" name="postnom" required>
-                                <label for="postnom">Nom</label>
-                            </div>
-                            <div class="ipt-grp">
-                                <input type="text" name="mess"required>
-                                <label for="mess">Nom</label>
-                            </div>
-                        </form>
+        <div class="modals">
+            <div class="modal hidden">
+                <div class="img"></div>
+                <div class="form_cont">
+
+                    <div class="cont_form">
+                        <div class="title">
+                            <h3>Fomulaire</h3>
+                        </div>
+                        <div class="formContact">
+                            <form action="">
+                                <div class="ipt-grp">
+                                    <input type="text" name="nom" required>
+                                    <label for="nom">Nom d'utilisateur</label>
+                                </div>
+                                <div class="ipt-grp">
+                                    <input type="text" name="postnom" required>
+                                    <label for="postnom">Nom</label>
+                                </div>
+                                <div class="ipt-grp">
+                                    <input type="text" name="mess" required>
+                                    <label for="mess">Nom</label>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

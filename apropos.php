@@ -22,7 +22,7 @@
                 </ul>
             </div>
             <div>
-                <a href="portfolio.html" class="cta">VOIR LA GALLLERIE</a>
+                <a href="gallerie.php" class="cta">VOIR LA GALLLERIE</a>
             </div></div>
 </section>
     </main>

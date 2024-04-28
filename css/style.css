@@ -176,12 +176,21 @@ header {
   font-size: 12px;
 }
 
-.hdr .modal {
-  background: black;
-  position: absolute;
+.hdr .modals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 70%;
   z-index: 6;
+  position: absolute;
+}
+
+.hdr .modals .modal {
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: none;
   border-radius: 20px;
   overflow: hidden;
@@ -199,7 +208,7 @@ header {
     box-shadow: 10px 0px 30px 5px transparent;
   }
 }
-.hdr .modal .img {
+.hdr .modals .modal .img {
   width: 100%;
   background-image: url(../images/img3.jpg);
   background-size: cover;
@@ -208,21 +217,21 @@ header {
   border-top-right-radius: 30px;
 }
 
-.hdr .modal .form_cont {
+.hdr .modals .modal .form_cont {
   width: 100%;
   height: 100%;
   background: transparent;
   padding: 20px;
 }
 
-.hdr .modal .form_cont .cont_form {
+.hdr .modals .modal .form_cont .cont_form {
   background: purple;
   width: 100%;
   height: 100%;
   
 }
 
-.hdr .modal .form_cont .formContact {
+.hdr .modals .modal .form_cont .formContact {
   background: cyan;
   width: 100%;
   height: 100%;
@@ -233,7 +242,7 @@ header {
   position: relative;
 }
 
-.hdr .modal .form_cont .formContact form {
+.hdr .modals .modal .form_cont .formContact form {
   width: 100%;
   height: 100%;
   margin-top: 10px;
@@ -241,7 +250,7 @@ header {
   position: absolute;
 }
 
-.hdr .modal .form_cont .formContact form .ipt-grp {
+.hdr .modals .modal .form_cont .formContact form .ipt-grp {
   position: relative;
   width: 100%;
   display: flex;
@@ -249,7 +258,7 @@ header {
   padding: 10px 0;
 }
 
-.hdr .modal .form_cont .formContact form .ipt-grp input {
+.hdr .modals .modal .form_cont .formContact form .ipt-grp input {
   outline: none;
   height: 40px;
   font-size: 16px;
@@ -261,7 +270,7 @@ header {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.hdr .modal .form_cont .formContact form .ipt-grp label {
+.hdr .modals .modal .form_cont .formContact form .ipt-grp label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -270,8 +279,8 @@ header {
   transition: .5s;
 }
 
-.hdr .modal .form_cont .formContact form .ipt-grp input:focus~label,
-.hdr .modal .form_cont .formContact form .ipt-grp inout:valid~label{
+.hdr .modals .modal .form_cont .formContact form .ipt-grp input:focus~label,
+.hdr .modals .modal .form_cont .formContact form .ipt-grp inout:valid~label{
   top: 0;
   font-size: 12px;
 }
