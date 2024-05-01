@@ -18,7 +18,7 @@
                     </h1>
                 </div>
                 <div id="logo">
-                    <img src="images/img6.jpg" alt="">
+                    <img src="images/logos.png" alt="" style="background: black;">
                 </div>
                 <div id="btnconnect">
                     <button class="btncnt">Se connecter</button>

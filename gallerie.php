@@ -1,9 +1,8 @@
 <main>
     <section>
-        <h1>Portfolio</h1>
+        <h1>Gallerie</h1>
     </section>
     <section class="portfolio-section-photos">
-        <h2>Paysages</h2>
         <div class="grid-paysages">
             <a href="images/img1.jpg" class="lien-conteneur-photo">
                 <img src="images/img1.jpg" alt="Mont Aoraki - Nouvelle-Zélande">
@@ -42,7 +41,7 @@
                 <div class="photo-hover">Voir la photo</div>
             </a>
         </div>
-        <h2>Portraits</h2>
+        <h2>TOP 3</h2>
         <div class="grid-portraits">
             <a href="images/img1.jpg" class="lien-conteneur-photo">
                 <img src="images/img1.jpg" alt="Portrait jeune femme 1">

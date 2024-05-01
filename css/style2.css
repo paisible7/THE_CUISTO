@@ -4,18 +4,14 @@
     height: 100vh;
     background: black;
     display: flex;
-
-    /* background-image: url(../images/img1.jpg);
+    background-image: url(../images/IMGE1.png);
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 #apropos .a-propos-main {
     width: 70%;
     margin: auto;
-    background-image: url(../images/img1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     
     
 }
@@ -35,7 +31,6 @@
 #apropos .blur {
     width: 100%;
     height: 100%;
-    /* backdrop-filter: blur(100px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,20 +38,19 @@
 
 #apropos section {
     padding: 80px;
-    backdrop-filter: blur(150px);
-    animation: rot 20s 3s linear infinite;
+    animation: rt 20s 3s linear infinite;
 
 }
 
 #apropos h1 {
     font-size: 3.5em;
-    color: black;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
 #apropos .carre-contenu {
-    border-right: 1px solid #8e86b5;
-    border-bottom: 1px solid #8e86b5;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
     padding: 50px;
     margin-bottom: 80px;
 }
@@ -92,7 +86,7 @@
 #apropos p,
 #apropos li {
     font-size: 1.1em;
-    color: black;
+    color: white;
 }
 
 #apropos header,
@@ -279,19 +273,21 @@
   .portfolio-section-photos h2 {
     color: #242424;
     margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
   }
   
   .grid-paysages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 400px 400px 400px;
     gap: 15px;
   }
   
   .grid-portraits {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 400px 400px 400px;
     gap: 15px;
   }
   
